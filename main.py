@@ -1,5 +1,5 @@
 # Bring in streamlit for UI dev
-import os
+
 import streamlit as st
 
 from ibm_watsonx_ai.foundation_models import Model
@@ -9,7 +9,6 @@ creds = {
     'apikey': st.secrets["apikey"],
     'url': 'https://jp-tok.ml.cloud.ibm.com'
 }
-project_id = os.getenv('PROJECT_ID')
 # Create LLM using Langchain
 our_model = Model(
     credentials=creds,
