@@ -1,13 +1,12 @@
 # Bring in streamlit for UI dev
 import os
-from dotenv import load_dotenv
 import streamlit as st
 
 from ibm_watsonx_ai.foundation_models import Model
-load_dotenv()
+
 # setup creds
 creds = {
-    'apikey': os.getenv('API_KEY'),
+    'apikey': st.secrets["apikey"],
     'url': 'https://jp-tok.ml.cloud.ibm.com'
 }
 project_id = os.getenv('PROJECT_ID')
@@ -20,7 +19,7 @@ our_model = Model(
         'max_new_tokens': 200,
         'temperature': 0.5
     },
-    project_id=project_id
+    project_id=st.secrets["project_id"]
 )
 
 # Setup the app title
