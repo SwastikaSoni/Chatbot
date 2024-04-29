@@ -1,14 +1,17 @@
+## Hosted Link
+
+The chatbot is hosted at [https://chatbot-swastika.streamlit.app/](https://chatbot-swastika.streamlit.app/).
+
+---
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/watson-chatbot.git
     git clone https://github.com/SwastikaSoni/Chatbot
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd watson-chatbot
     cd Chatbot
     ```
 
@@ -20,22 +23,20 @@
     ```
 
 ### Configuration
-@@ -43,16 +43,16 @@ Follow these steps to set up and run the chatbot application:
+Follow these steps to set up and run the chatbot application:
+
 2. Add your IBM Watson API keys and project ID to the `.env` file:
 
     ```dotenv
-    WATSON_API_KEY=your_watson_api_key
-    WATSON_PROJECT_ID=your_watson_project_id
     API_KEY=your_watson_api_key
-    project_id=your_watson_project_id
+    PROJECT_ID=your_watson_project_id
     ```
 
 ### Running the Application
 
-Run the chatbot application using the following command:
+Run the chatbot application using the following command in the terminal:
 
 ```bash
-streamlit run chatbot.py
 streamlit run main.py
 ```
 
